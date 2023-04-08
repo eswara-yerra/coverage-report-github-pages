@@ -8,7 +8,7 @@ class TestHandlerCase(unittest.TestCase):
 
     def test(self):
         name = 'testmycode'
-        expected_output = '{} ??? You are right !!!\n'.format(name)
+        expected_output = '{}??? You are right !!!\n'.format(name)
 
         with patch('sys.stdout', new=StringIO()) as fake_out:
             say_my_name(name)
