@@ -46,5 +46,6 @@ jobs:
           path: './htmlcov/'
       
       - name: deploy to Github Pages
+        uses: actions/deploy-pages@v2
         id: deployment
-        users: actions/deploy-pages@v2
+        
